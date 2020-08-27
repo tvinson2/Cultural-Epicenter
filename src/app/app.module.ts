@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { Kiosk1Component } from './kiosk1/kiosk1.component';
 import { Kiosk2Component } from './kiosk2/kiosk2.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     Kiosk1Component,
-    Kiosk2Component
+    Kiosk2Component,
+ 
   ],
   imports: [
     BrowserModule,
