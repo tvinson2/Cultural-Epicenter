@@ -1,20 +1,14 @@
-<div class="container-sm"> <!-- 100% wide until small breakpoint -->
-            
-  
-  
-  
-  
-  
-  
-  <div style="text-align:center"><h1>Cultural Epicenter</h1></div>
-  <nav>
-    <a routerLink="/kiosk1" routerLinkActive="active">Kiosk1</a>
-    <br>
-    <a routerLink="/kiosk2" routerLinkActive="active">Kiosk2</a>
-    <br>
-  </nav>
+<mat-drawer-container class="container" autosize>
+    <mat-drawer #drawer class="sidenav">
+          <p>Menu</p>
+    </mat-drawer>
+    <div class="sidenav-content">
+        <button mat-icon-button (click)="drawer.toggle()">
+            <mat-icon> menu </mat-icon>
+        </button>
+    </div>
+</mat-drawer-container>
 
-</div>
 
 <router-outlet></router-outlet>
 
