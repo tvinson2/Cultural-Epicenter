@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Cultural-Epicenter": {
+    "cultural-epicenter": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Cultural-Epicenter",
+            "outputPath": "dist/cultural-epicenter",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Cultural-Epicenter:build"
+            "browserTarget": "cultural-epicenter:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Cultural-Epicenter:build:production"
+              "browserTarget": "cultural-epicenter:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Cultural-Epicenter:build"
+            "browserTarget": "cultural-epicenter:build"
           }
         },
         "test": {
@@ -113,15 +113,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Cultural-Epicenter:serve"
+            "devServerTarget": "cultural-epicenter:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Cultural-Epicenter:serve:production"
+              "devServerTarget": "cultural-epicenter:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "Cultural-Epicenter"
+  "defaultProject": "cultural-epicenter"
 }

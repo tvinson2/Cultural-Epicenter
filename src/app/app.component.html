@@ -1,17 +1,21 @@
 <mat-drawer-container class="container" autosize>
     <mat-drawer #drawer class="sidenav">
-          <button routerLink="/customers">Customers</button>
-          <button routerLink="/orders">Orders</button>
-          <button routerLink="/messages">Messages</button>
+          <button color="primary" routerLink="/customers">Customers</button>
+          <button color="primary" routerLink="/orders">Orders</button>
+          <button color="primary" routerLink="/messages">Messages</button>
     </mat-drawer>
     <div class="sidenav-content">
-        <button mat-icon-button (click)="drawer.toggle()">
-            <mat-icon> menu </mat-icon>
-        </button>
-<router-outlet></router-outlet>        
+        <mat-toolbar color="primary">
+            <mat-toolbar-row>
+                <button mat-icon-button (click)="drawer.toggle()">
+                    <mat-icon>menu</mat-icon>
+                </button> 
+                
+                <span>Cultural Epicenter</span>
+                <span class="spacer"></span>
+                <mat-icon>favorite</mat-icon>
+            </mat-toolbar-row>
+        </mat-toolbar>
+        <router-outlet></router-outlet>
     </div>
 </mat-drawer-container>
-
-
-
-
