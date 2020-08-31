@@ -6,9 +6,7 @@ const routes: Routes = [
   {path: 'orders',loadChildren:'./orders/orders.module#OrdersModule'},
   {path: 'messages',loadChildren:'./messages/messages.module#MessagesModule'},
   {path: '',redirectTo:'',pathMatch:'full'}
-  
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

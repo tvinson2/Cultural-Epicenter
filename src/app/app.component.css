@@ -6,13 +6,14 @@
     bottom:0px;
 }
 .container .mat-drawer {
-    min-width: 200px;
+    min-width: 100px;
 }
 .container .mat-drawer .mat-button {
     display: block;
-    width: 100%;
+    width: 200%;
     text-align: left;
 }
 .spacer{
     flex: 1px 1px auto;
 }
+

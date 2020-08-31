@@ -10,9 +10,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
-  declarations: [
+  declarations:[
     AppComponent
- 
   ],
   imports: [
     BrowserModule,
@@ -24,7 +23,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatToolbarModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
 
