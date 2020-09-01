@@ -1,0 +1,14 @@
+<h1>Artist Details</h1>
+
+<!-- Artists information: id: {{artists.id}} || name: {{artists.name}}
+<br><a routerLink="/artists">Go To Artist List</a> -->
+
+<h1>Artists List</h1>
+
+<ul>
+	<li *ngFor="let artist of artists">
+		<a [routerLink]="['/artist', artist.id]">{{artist.name}}</a>
+	</li>
+</ul>
+
+<a routerLink="/">Go To Home</a>
