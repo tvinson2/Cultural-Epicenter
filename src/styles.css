@@ -83,7 +83,6 @@ body {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-
 #front {
   background: url(http://www.tranexnet.com/img/front.png) repeat 35% 35%;
   position: fixed;

@@ -1,12 +1,39 @@
 <mat-drawer-container class="container" autosize>
     <mat-drawer #drawer class="sidenav">
                 
-                <button color="primary" mat-button routerLink="/entertainment">Entertainment</button>
-                <button color="primary" mat-button routerLink="/libraries">Libraries</button>
-                <button color="primary" mat-button routerLink="/lifestyles">Lifestyles</button>
-                <button color="primary" mat-button routerLink="/resources">Resources</button>
-
-
+        <div class="dropdown1">
+                <button class="dropbtn1" color="primary" mat-button routerKiosk="/entertainment"><mat-icon>headset_mic</mat-icon></button>
+                <div class="dropdown-content1">
+                    <a href="/entertainment/kiosk101">Kiosk 101</a>
+                    <a href="/entertainment/kiosk102">Kiosk 102</a>
+                    <a href="/entertainment/kiosk103">Kiosk 103</a>
+                </div>
+        </div>
+        <div class="dropdown2">
+                <button class="dropbtn2" color="primary" mat-button routerKiosk="/libraries"><mat-icon>menu_book</mat-icon></button>
+                <div class="dropdown-content2">
+                    <a href="/libraries/kiosk201">Kiosk 201</a>
+                    <a href="/libraries/kiosk202">Kiosk 202</a>
+                    <a href="/libraries/kiosk203">Kiosk 203</a>
+                </div>
+        </div>
+        <div class="dropdown3">
+                <button class="dropbtn3" color="primary" mat-button routerKiosk="/lifestyles"><mat-icon>wc</mat-icon></button>
+                <div class="dropdown-content3">
+                    <a href="/lifestyles/kiosk301">Kiosk 301</a>
+                    <a href="/lifestyles/kiosk302">Kiosk 302</a>
+                    <a href="/lifestyles/kiosk303">Kiosk 303</a>
+                </div>
+        </div>
+        <div class="dropdown4">
+                <button class="dropbtn4" color="primary" mat-button><mat-icon>handyman</mat-icon></button>
+                <div class="dropdown-content4">
+                    <a routerLink ="/kiosk401" routerLinkActive="active-link">Kiosk 401</a>
+                    <a routerLink ="/kiosk402" routerLinkActive="active-link">Kiosk 402</a>
+                    <a routerLink ="/kiosk403" routerLinkActive="active-link">Kiosk 403</a>
+                </div>
+        </div>
+          
     </mat-drawer>
     
     <div class="sidenav-content">
@@ -17,13 +44,14 @@
                     <mat-icon>menu</mat-icon>
                 </button> 
                 
-                <span><p>Cultural Epicenter</p></span>
+                <span>Cultural Epicenter</span>
                 <span class='spacer'></span>
-                <mat-icon>favorite</mat-icon>
+                <mat-icon>home_work</mat-icon>
             </mat-toolbar-row>
         </mat-toolbar>
-       <router-outlet></router-outlet>
+       
     </div>
 </mat-drawer-container>
+<router-outlet></router-outlet>
 
 
